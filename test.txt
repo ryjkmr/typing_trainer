@@ -1,0 +1,15 @@
+function fn(n) { }
+const HOST_NAME = 'HOST';
+let result = 1;
+for (let i = 1; i <= n; i++) {}
+return result;
+let obj = {name:'a', age:12};
+console.log('result:' + result);
+'use strict';
+array.forEach((value,index)=> { });
+array.map()
+let array = ['a','b'];
+array.push('new');
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Typing Pactice for Programmers</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h1>Typing Trainer for Programmers</h1>
+  <h2>Javascript編</h2>
+
+  <p>プログラミング入門者向けのタイピング練習アプリです。</p>
+  <ul>特徴
+    <li>Javascriptでよく使いそうな文を収録</li>
+    <li>記号もいっぱい練習できる</li>
+    <li>コードが見やすい等幅フォントで表示</li>
+    <li>どこまでちゃんと入力できたか分かる</li>
+    <li>練習したい問題を自分で設定できる（test.txtを編集するか、画面下の入力欄を使用）</li>
+
+  </ul>
+
+  <p>表示されたテキストを大文字／小文字、空白も含めて入力して下さい。空白の数は問いません</p>
+  <div id="errorMsg"></div>
+  <div class="box text upperbox" id="question" style="width:auto; background-color:black"></div>
+  <div class="box text" id="input" contenteditable="true" style="width:auto; background-color:rgb(0, 204, 255)"></div>
+  <button id="skip">この問題はスキップ</button>
+  <br>
+  <hr>
+  <h3>オリジナル問題の使用</h3>
+  <p>以下の欄に練習したい文を入力あるいはペーストして、[オリジナル問題を使用]ボタンをクリックして下さい</p>
+  <p>元の問題に戻すには、ページを再読み込みして下さい</p>
+  <button id="loadOriginal">オリジナル問題を使用</button>
+  <p></p>
+  <textarea name="" id="original" cols="40" rows="10"></textarea>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>　

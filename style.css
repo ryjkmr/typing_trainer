@@ -1,0 +1,33 @@
+.box {
+  height: 50%;
+}
+
+/* .uppterbox a {
+  bottom: 5px;
+} */
+
+#errorMsg {
+  color: #ff0000;
+}
+
+#question.text {
+  font-size: 200%;
+  color: #ffffff;
+  font-family: "Courier New", monospace;
+}
+
+#input.text {
+  font-size: 200%;
+  color: #000000;
+  font-family: "Courier New", monospace;
+}
+
+span.match {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 30%;
+}
