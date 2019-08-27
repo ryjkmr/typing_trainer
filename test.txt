@@ -1,15 +1,65 @@
-function fn(n) { }
-const HOST_NAME = 'HOST';
-let result = 1;
-for (let i = 1; i <= n; i++) {}
-return result;
-let obj = {name:'a', age:12};
-console.log('result:' + result);
 'use strict';
-array.forEach((value,index)=> { });
-array.map()
-let array = ['a','b'];
+array.filter((value) => { });
+array.forEach((value, index) => { });
+array.map((v) => { return v * v });
+array.map((v) => { });
 array.push('new');
-
-
-
+console.log('result:' + result);
+console.info('info');
+console.log(result);
+console.log(new Date());
+const now = new Date();
+const array = ['a', 'b'];
+const newArray = array.map((a) => { return a * 2; });
+false
+for (let i = 0; i < array.length; i++) { }
+for (let i = 1; i < 100; i++) { }
+for (let i = 1; i <= n; i++) { }
+function myFunc(n) { };
+if (!a) { }
+if (a !== b) { }
+if (a && b) { }
+if (a < b) { }
+if (a <= b) { }
+if (a === b) { }
+if (a > b) { }
+if (a >= b) { }
+if (a || b) { }
+if (a) { } else { }
+const array = ['a', 'b'];
+str = str.replace(a,b);
+const oomoji = /[A-Z]/g;
+const komoji = /[a-z]/g;
+const number = /[0-9]/g;
+const doreka = /[abc]/g;
+const firstOfLines = /^a/m;
+const endOfLines = /a$/m;
+const numbers3 = /[0-9]{3}/;
+const number = /\d/g;
+const not_number =/\D/g;
+const space = /\s/g;
+const not_space = /\S/g;
+const numbers3orMore =/[0-9]{3,}/;
+const Alph_and_Num = /\w/g;
+const Not_Alph_and_Num = /\W/g;
+const oneOfThem = /[abc]/g;
+const 
+str = str.match(pattern);
+let obj = { name: 'a', age: 12 };
+let obj = {};
+let result = 1;
+return result;
+true
+var fn = (a, b) => { }
+const arr = str.split(/\r\n|\r|\n/);
+const arr = str.split(',');
+const map = new Map();
+map.set(key, value);
+str = str.trim();
+map.get(key);
+const columns = lineString.split(',');
+const num = parseInt(str);
+const result = array.sort((a, b) => { a - b });
+/* comment */
+// comment
+try { } catch (err) { }
