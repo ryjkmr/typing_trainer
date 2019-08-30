@@ -7,40 +7,61 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Typing Pactice for Programmers</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
-  <h1>Typing Trainer for Programmers</h1>
-  <h2>Javascript編</h2>
-
-  <p>プログラミング入門者向けのタイピング練習アプリです。</p>
-  <ul>特徴
-    <li>Javascriptでよく使いそうな文を収録</li>
-    <li>記号もいっぱい練習できる</li>
-    <li>コードが見やすい等幅フォントで表示</li>
-    <li>どこまでちゃんと入力できたか分かる</li>
-    <li>練習したい問題を自分で設定できる（test.txtを編集するか、画面下の入力欄を使用）</li>
-
-  </ul>
-
-  <p>表示されたテキストを大文字／小文字、空白も含めて入力して下さい。空白の数は問いません</p>
-  <div id="errorMsg"></div>
-  <div class="box text upperbox" id="question" style="width:auto; background-color:black"></div>
-  <div class="box text" id="input" contenteditable="true" style="width:auto; background-color:rgb(0, 204, 255)"></div>
-  <button id="skip">この問題はスキップ</button>
-  <br>
-  <hr>
-  <h3>オリジナル問題の使用</h3>
-  <p>以下の欄に練習したい文を入力あるいはペーストして、[オリジナル問題を使用]ボタンをクリックして下さい</p>
-  <p>元の問題に戻すには、ページを再読み込みして下さい</p>
-  <button id="loadOriginal">オリジナル問題を使用</button>
-  <p></p>
-  <textarea name="" id="original" cols="40" rows="10"></textarea>
+  <!-- <audio id="beep" src="sound.wav" preload="auto"></audio> -->
+  <div class="title">Typing Trainer for Programmers <span class="lang">- Javascript編 -</span>
+    <p class="subTitle">プログラミング入門者向けのタイピング練習アプリ</p>
   </div>
 
-  <script src="main.js"></script>
+  <div>
+    <ul class="list"><span class="headSmall">特徴</span>
+      <li>プログラミング特有の言葉や記号を重点的に練習できる</li>
+      <li>コードが見やすい等幅フォント表示</li>
+      <li>正しく入力できているかリアルタイムで分かる</li>
+      <li>練習したい問題を自分で設定できる（データファイルを編集するか、画面下の入力欄を使用）</li>
+    </ul>
+    <ul class="list"><span class="headSmall">遊び方</span>
+      <li>遊びたいモードをボタンで選びます</li>
+      <li>表示されたテキストを大文字／小文字、空白も含めて入力</li>
+      <li>空白の数は問いません</li>
+      <li>採点機能などはありません。マイペースで練習しましょう</li>
+    </ul>
+    <p></p>
+
+    <div id="player">
+      <div id="buttonGrp" class="mgr_10">
+        <form id="modeBtn" class="vertical-align">
+          <input type="radio" name="mode" value="symbol">記号
+          <input type="radio" name="mode" value="easy">イージー
+          <input type="radio" name="mode" value="normal" checked>ノーマル
+        </form>
+      </div>
+      <div id="errorMsg" class="mgr_10"></div>
+      <div class="box text upperbox" id="question"></div>
+      <div class="box text" id="input" contenteditable="true"></div>
+      <p class="mgr_10"><button id="skip">この問題はスキップ</button></p>
+    </div>
+    <hr>
+
+    <ul class="list"><span class="headSmall">オリジナル問題の使用</span>
+      <li>下の欄に練習したい文を入力あるいはペースト</li>
+      <li>[オリジナル問題を使用]ボタンをクリック</li>
+      <li>元の問題に戻すにはプレイモードのラジオボタンを選択</li>
+      <li>データファイル（symbol.txt, easy.txt, normal.txt)を編集する方法もあります</li>
+    </ul>
+
+    <textarea name="" id="original" cols="40" rows="10" placeholder="練習したい文を入力"></textarea>
+    <p><button id="loadOriginal" class="mgr_10">オリジナル問題を使用</button></p>
+    <hr>
+    <footer>
+      <p>「N予備校 動くWebページコンテスト 2019夏」応募作品</p>
+      <p>created by ryjkmr</p>
+      <address><a href="https://github.com/ryjkmr/typing_trainer">github.com/ryjkmr/typing_trainer</a></address>
+    </footer>
+    <script src="main.js"></script>
 
 </body>
+
 </html>　

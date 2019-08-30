@@ -1,25 +1,86 @@
-.box {
-  height: 50%;
+body {
+  background-color: #acacac;
+  font-family: sans-serif;
+}
+button{
+  font-size: 100%;
+}
+.mgr_10 {
+  margin-right: 10px;
+  padding-left: 10px;
 }
 
-/* .uppterbox a {
-  bottom: 5px;
-} */
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 200%;
+  background-color: #dadada;
+  color: #000000;
+  font-weight: bold;
+  line-height: 1.0;
+  /* border: 1px solid #000000; */
+  /* display: table-cell; */
+  text-align: center;
+  /* vertical-align: middle; */
+  padding: 10px;
+}
+
+.lang {
+  font-size: 40%;
+}
+
+.subTitle {
+  font-size: 50%;
+  color: #5c5c5c
+}
+
+.headSmall {
+  font-weight: bold;
+  font-size: 100%;
+  line-height: 1.0;
+}
+
+.list {
+  font-size: 100%;
+  line-height: 1.5;
+}
 
 #errorMsg {
-  color: #ff0000;
+  color: #ca0000;
+  font-size: 70%;
+  font-weight: bold;
+}
+
+#player {
+  border: 5px solid #444444;
+}
+
+#question {
+  width: auto;
+  background-color: black;
+}
+
+#input {
+  width: auto;
+  background-color: rgb(0, 204, 255);
 }
 
 #question.text {
   font-size: 200%;
+  line-height: 1.5;
   color: #ffffff;
   font-family: "Courier New", monospace;
+  padding-left: 10px;
 }
 
 #input.text {
   font-size: 200%;
+  line-height: 1.5;
   color: #000000;
   font-family: "Courier New", monospace;
+  padding-left: 10px;
 }
 
 span.match {
@@ -29,5 +90,5 @@ span.match {
 
 textarea {
   width: 100%;
-  height: 30%;
+  background-color: rgba(189, 189, 189, 0.719);
 }
